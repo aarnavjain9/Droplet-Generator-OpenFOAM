@@ -128,10 +128,6 @@ This OpenFOAM 13 install includes the `solidDisplacement` module, and the repo
 now includes a standalone `solidCase/`. What is still missing is the actual
 fluid-solid coupling infrastructure needed for a true deforming pipe.
 
-See:
-
-- [FLEXIBLE_PIPE.md](/home/aarnav/Desktop/pipe_multiphase/FLEXIBLE_PIPE.md)
-- [COUPLING.md](/home/aarnav/Desktop/pipe_multiphase/COUPLING.md)
 
 ## What “flexible” would mean here
 
