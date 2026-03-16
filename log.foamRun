@@ -1,0 +1,80 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : foamRun -solver incompressibleVoF
+Date   : Mar 10 2026
+Time   : 02:27:06
+Host   : "aarnav-HP-Pavilion-Laptop-14-dv2xxx"
+PID    : 30185
+I/O    : uncollated
+Case   : /home/aarnav/Desktop/pipe_multiphase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting solver incompressibleVoF
+Selecting viscosity model constant
+Selecting viscosity model constant
+No MRF models present
+
+Courant Number mean: 0.0064 max: 0.0064
+Interface Courant Number mean: 0 max: 0
+Selecting turbulence model type laminar
+    Selecting laminar stress model Stokes
+GAMGPCG:  Solving for pcorr, Initial residual = 0.034925237, Final residual = 9.3259563e-06, No Iterations 8
+
+PIMPLE: No convergence criteria found
+
+
+PIMPLE: Operating solver in transient mode with 1 outer corrector
+PIMPLE: Operating solver in PISO mode
+
+
+
+Starting time loop
+
+Courant Number mean: 0.0064 max: 0.0064
+Interface Courant Number mean: 0 max: 0
+deltaT = 1.1990408e-05
+Time = 1.19904e-05s
+
+smoothSolver:  Solving for alpha.water, Initial residual = 0.0010562207, Final residual = 9.4131363e-18, No Iterations 1
+Phase-1 volume fraction = 0.016280586  Min(alpha.water) = 0  Max(alpha.water) = 1
+MULES: Correcting alpha.water
+MULES: Correcting alpha.water
+Phase-1 volume fraction = 0.016280586  Min(alpha.water) = -2.5348596e-27  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 1, Final residual = 7.045333e-09, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 1, Final residual = 1.5527291e-08, No Iterations 3
+smoothSolver:  Solving for Uz, Initial residual = 1, Final residual = 1.5430987e-08, No Iterations 3
+GAMG:  Solving for p_rgh, Initial residual = 1, Final residual = 0.0079519396, No Iterations 3
+time step continuity errors : sum local = 2.1763818e-05, global = -3.4232439e-07
+GAMG:  Solving for p_rgh, Initial residual = 0.070609432, Final residual = 8.4765662e-08, No Iterations 50
+time step continuity errors : sum local = 4.9105989e-10, global = 2.6018208e-10, cumulative = 2.6018208e-10
+ExecutionTime = 0.788128 s  ClockTime = 1 s
+
+Courant Number mean: 0.0097011525 max: 0.58005486
+Interface Courant Number mean: 0 max: 0
+deltaT = 8.2682199e-06
+Time = 2.02586e-05s
+
+smoothSolver:  Solving for alpha.water, Initial residual = 0.0049359011, Final residual = 6.6858885e-11, No Iterations 3
+Phase-1 volume fraction = 0.016280586  Min(alpha.water) = 0  Max(alpha.water) = 1
+MULES: Correcting alpha.water
+MULES: Correcting alpha.water
+Phase-1 volume fraction = 0.016280586  Min(alpha.water) = -5.8749236e-20  Max(alpha.water) = 1
+smoothSolver:  Solving for Ux, Initial residual = 0.42325093, Final residual = 9.8313292e-08, No Iterations 3
+smoothSolver:  Solving for Uy, Initial residual = 0.45787553, Final residual = 7.03656e-08, No Iterations 3
+smoothSolver:  Solving for Uz, Initial residual = 0.45785797, Final residual = 7.048533e-08, No Iterations 3
+GAMG:  Solving for p_rgh, Initial residual = 0.27648869, Final residual = 0.001844059, No Iterations 4
+time step continuity errors : sum local = 3.3842933e-06, global = 1.9216951e-08

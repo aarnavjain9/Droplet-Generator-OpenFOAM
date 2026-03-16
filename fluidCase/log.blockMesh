@@ -1,0 +1,89 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : blockMesh
+Date   : Mar 10 2026
+Time   : 02:43:21
+Host   : "aarnav-HP-Pavilion-Laptop-14-dv2xxx"
+PID    : 31057
+I/O    : uncollated
+Case   : /home/aarnav/Desktop/pipe_multiphase/fluidCase
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Basic statistics
+    Number of internal faces : 8
+    Number of boundary faces : 14
+    Number of defined boundary faces : 14
+    Number of undefined boundary faces : 0
+
+Checking topology
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.00035355339 .. 0.00035355339 0.00034060922 0.00035355339 .. 0.00035355339 0.00034060922 
+        j : 7.3223305e-05 6.4720869e-05 .. 6.4720869e-05 7.3223305e-05 6.4720869e-05 .. 6.4720869e-05 
+        k : 0.0003125 .. 0.0003125
+    Block 1 cell size :
+        i : 7.3223305e-05 6.4720869e-05 .. 6.4720869e-05 7.3223305e-05 .. 7.3223305e-05 6.4720869e-05 .. 6.4720869e-05 
+        j : 0.00035355339 .. 0.00035355339 0.00034060922 .. 0.00034060922 0.00035355339 .. 0.00035355339 0.00034060922 .. 0.00034060922 
+        k : 0.0003125 .. 0.0003125
+    Block 2 cell size :
+        i : 7.3223305e-05 6.4720869e-05 .. 6.4720869e-05 7.3223305e-05 .. 7.3223305e-05 6.4720869e-05 .. 6.4720869e-05 
+        j : 0.00025 0.00026294417 .. 0.00026294417 0.00025 0.00026294417 .. 0.00026294417 
+        k : 0.0003125 .. 0.0003125
+    Block 3 cell size :
+        i : 0.00025 0.00026294417 0.00025 .. 0.00025 0.00026294417 
+        j : 7.3223305e-05 6.4720869e-05 .. 6.4720869e-05 7.3223305e-05 6.4720869e-05 .. 6.4720869e-05 
+        k : 0.0003125 .. 0.0003125
+    Block 4 cell size :
+        i : 0.00025
+        j : 0.00025
+        k : 0.0003125 .. 0.0003125
+
+No patch pairs to merge
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 -0.0014142136 -0.0014142136) (0.05 0.0014142136 0.0014142136)
+  nPoints: 54257
+  nCells: 51200
+  nFaces: 156480
+  nInternalFaces: 150720
+----------------
+Patches
+----------------
+  patch 0 (start: 150720 size: 320) name: inlet
+  patch 1 (start: 151040 size: 320) name: outlet
+  patch 2 (start: 151360 size: 5120) name: pipeWall
+
+End
+
