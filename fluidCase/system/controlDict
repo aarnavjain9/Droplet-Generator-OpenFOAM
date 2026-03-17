@@ -16,13 +16,15 @@ FoamFile
 
 solver          incompressibleVoF;
 
+libs            ("libfieldFunctionObjects.so");
+
 startFrom       startTime;
 
 startTime       0;
 
 stopAt          endTime;
 
-endTime         0.12;
+endTime 0.002;
 
 deltaT          1e-05;
 
@@ -51,4 +53,17 @@ maxAlphaCo      0.25;
 
 maxDeltaT       1e-04;
 
-// ************************************************************************* //
+functions
+{
+    patchAveragePressure
+    {
+        type            surfaceFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        patch           pipeWall;
+        operation       average;
+        fields          (p_rgh);
+        writeControl    timeStep;
+        writeInterval   1;
+        writeFields     false;
+    }
+}

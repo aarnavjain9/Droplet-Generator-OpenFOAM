@@ -35,7 +35,8 @@ boundaryField
 
     pipeWall
     {
-        type            noSlip;
+        type            movingWallVelocity;
+        value           uniform (0 0 0);
     }
 }
 

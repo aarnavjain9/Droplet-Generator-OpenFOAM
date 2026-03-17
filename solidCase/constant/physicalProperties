@@ -17,19 +17,19 @@ FoamFile
 rho
 {
     type        uniform;
-    value       1100;
+    value       970;
 }
 
 nu
 {
     type        uniform;
-    value       0.45;
+    value       0.49;
 }
 
 E
 {
     type        uniform;
-    value       5e6;
+    value       5e7;
 }
 
 Cv

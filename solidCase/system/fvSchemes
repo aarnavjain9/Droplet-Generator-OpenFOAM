@@ -21,12 +21,12 @@ d2dt2Schemes
 
 gradSchemes
 {
-    default         Gauss cubic;
+    default         Gauss linear;
 }
 
 divSchemes
 {
-    default         Gauss cubic;
+    default         Gauss linear;
 }
 
 laplacianSchemes
@@ -36,7 +36,7 @@ laplacianSchemes
 
 interpolationSchemes
 {
-    default         cubic;
+    default         linear;
 }
 
 snGradSchemes

@@ -35,7 +35,7 @@ boundaryField
     {
         type            tractionDisplacement;
         traction        uniform (0 0 0);
-        pressure        uniform 1500;
+        pressure        uniform -20.1036082;
         value           uniform (0 0 0);
     }
 

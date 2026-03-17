@@ -16,7 +16,7 @@ FoamFile
 
 defaultValues
 {
-    alpha.water     0;
+    alpha.water     1;
 }
 
 zones
@@ -30,7 +30,7 @@ zones
 
         values
         {
-            alpha.water 1;
+            alpha.water 0;
         }
     }
 }
